@@ -42,6 +42,7 @@ export default [
   {
     rules: {
       ...configPrettier.rules, // Prettier와 충돌하는 규칙 비활성화
+      'react/jsx-props-no-spreading': 'off', // JSX에서 prop 전파 허용
     },
   },
   {
