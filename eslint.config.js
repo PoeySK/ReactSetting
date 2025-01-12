@@ -34,7 +34,7 @@ export default [
       ...tseslint.configs.recommended.rules, // TypeScript 규칙
       ...pluginReact.configs.flat.recommended.rules, // React 규칙
       ...airbnb.rules,
-      'prettier/prettier': 'error', // Prettier 규칙을 ESLint에서 에러로 처리
+      'prettier/prettier': ['error', { endOfLine: 'auto' }], // Prettier 규칙을 ESLint에서 에러로 처리
       'react/react-in-jsx-scope': 'off', // React 17+에서 불필요한 규칙 비활성화
       ...tanstackQuery.configs.recommended.rules, // TanStack Query 권장 규칙 추가
     },
